@@ -74,7 +74,7 @@ const replaceNumber2 = (s) => {
 
   numbers.forEach((val, idx) => {
     let regex = val.string;
-    result = result.replaceAll(regex, idx);
+    result = result.replaceAll(regex, val.num);
   });
   return Number(result);
 };
